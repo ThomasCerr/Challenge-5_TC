@@ -34,10 +34,23 @@ localStorage.setItem("tasks",JSON.stringify(tasks));
 
 
 
-$('.saveBtn').each(function(event) {
- $(this).on("click", function(){
-var text = $(this).val().trim();
-var taskArea = $()
+$('.saveBtn').on("click",function() {
+var updatedTask = [];
+for (var i = 0; i < timeBlocks.length; i++){
+    updatedTask.push(document.getElementsByTagName("input")[i].value);
+}
+userBlocks = updatedTask;
+localStorage.setItem("tasks", JSON.stringify(userBlocks));
+console.log('hello')
+});
+
+
+
+
+    
+//  $(this).on("click", function(){
+
+
 }
 
 //save local storage
