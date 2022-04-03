@@ -35,6 +35,6 @@ THEN the saved events persist
 ```
 ## Mockup
 
-<img src= "https://github.com/ThomasCerr/Challenge-4_TC/blob/master/assets/images/example.PNG">
+<img src= "https://github.com/ThomasCerr/Challenge-5_TC/blob/master/assets/images/example.PNG">
 
 Link to deployed application: https://thomascerr.github.io/Challenge-5_TC/
