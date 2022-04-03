@@ -26,68 +26,14 @@ var timeColor = function() {
         }}}
 
 
-
-var saveTasks = function(){
-localStorage.setItem("tasks",JSON.stringify(tasks));
-
-
-
-
-
-$('.saveBtn').on("click",function() {
-var updatedTask = [];
-for (var i = 0; i < timeBlocks.length; i++){
-    updatedTask.push(document.getElementsByTagName("input")[i].value);
-}
-userBlocks = updatedTask;
-localStorage.setItem("tasks", JSON.stringify(userBlocks));
-console.log('hello')
-});
+// set up the local storage
+function setLocalStorage(){
+localStorage.setItem("tasks",JSON.stringify(tasks));}
 
 
 
 
-    
-//  $(this).on("click", function(){
-
-
-}
-
-//save local storage
-
-        // jquery to all of save button, based on a save button, it will save to local storage, based on time to match the block?
-                
-
-//save local storage
-
-        // jquery to all of save button, based on a save button, it will save to local storage, based on time to match the block?
-        // array that will = a Json
-
-//load local storage
-        //pull the json above
-            //find text area based on id, set it to whatever is saved in local storage
-
-// function loadLocalStorage () {}
-
-// //click listener to save buttons
-// $('.saveBtn').each(function(event) {
-//     $(this).on("click", function(){
-        
-
-
-
-// // local storage Json
-// var savedTask = JSON.parse(localStorage.getItem('savedTask'));
-// if (savedTask == null) {
-//     savedTask = [];
-// }
-// // saves text to array
-// plans[saveHour] = toSaveText;
-// localStorage.setItem('plans', JSON.stringify(plans));
-            
-
-
-//     })
-// })
+$('.saveBtn').each(function(event) {
+        $(this).on("click", function(){
 
 timeColor();
